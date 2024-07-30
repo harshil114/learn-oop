@@ -8,10 +8,18 @@ class Employee:
         
 class Programmer(Employee):
     def skills(self):
-        print("Python")        
+        print("Python")  
+
+class SoftwareDeveloper(Programmer):
+    def salary(self):
+        print("Salary is: 50000")      
 
 e1 = Employee("Harshil",1)
 e1.showDetails()
 
 e2 = Programmer("Manoj",2)
 e2.showDetails()
+
+e3 = SoftwareDeveloper("Rakesh",3)
+e3.showDetails()
+e3.salary()
